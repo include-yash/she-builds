@@ -1,87 +1,97 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Heart, Lightbulb } from 'lucide-react';
 
-const HeroSection = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 21,
-    hours: 15,
-    minutes: 10
-  });
+const TARGET_DATE = new Date('2025-08-01T00:00:00'); // <-- set your target date here
+
+export default function HeroSection() {
+  const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
+
+  function getTimeRemaining() {
+    const total = TARGET_DATE - new Date();
+    const days    = Math.max(Math.floor(total / (1000 * 60 * 60 * 24)), 0);
+    const hours   = Math.max(Math.floor((total / (1000 * 60 * 60)) % 24), 0);
+    const minutes = Math.max(Math.floor((total / (1000 * 60)) % 60), 0);
+    const seconds = Math.max(Math.floor((total / 1000) % 60), 0);
+    return { days, hours, minutes, seconds };
+  }
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59 };
-        } else if (prev.days > 0) {
-          return { ...prev, days: prev.days - 1, hours: 23, minutes: 59 };
-        }
-        return prev;
-      });
-    }, 60000);
-
-    return () => clearInterval(timer);
+    const timerId = setInterval(() => {
+      setTimeLeft(getTimeRemaining());
+    }, 1000);
+    return () => clearInterval(timerId);
   }, []);
 
+  const timerBlocks = [
+    { value: timeLeft.days,    label: 'Days'    },
+    { value: timeLeft.hours,   label: 'Hours'   },
+    { value: timeLeft.minutes, label: 'Minutes' },
+    { value: timeLeft.seconds, label: 'Seconds' },
+  ];
+
   return (
-    <div className="px-8 py-16 text-center relative">
-      <div className="max-w-4xl mx-auto">
-        {/* VLIV Presents */}
-        <div className="mb-8">
-          <div className="text-lg text-white mb-2">VLIV</div>
-          <div className="text-sm text-white opacity-80">Presents</div>
-        </div>
+   <section id="hero" className="relative px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
+  
 
-        {/* Main Title */}
-        <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-4">
-            She<span className="text-black">Builds</span>.
-          </h1>
-          <p className="text-xl text-white font-medium">All India Women only Hackathon</p>
-        </div>
+  {/* Main Content */}
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
+    {/* LEFT SIDE */}
+    <div className="flex-1 space-y-10 ml-36">
+      {/* Logo */}
+      <div className="flex justify-center md:justify-start ml-36">
+        <img src="/presentslogo.png" alt="VLIV Logo" className="h-12 w-auto" />
+      </div>
 
-        {/* Register Button */}
-        <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-semibold mb-12">
+      {/* Title + Subtitle */}
+      <div>
+        <h1 className="text-5xl md:text-8xl font-extrabold leading-tight">
+          <span className="text-white">She</span>
+          <span className="text-black ml-2">Builds.</span>
+        </h1>
+        <p className="text-xl md:text-2xl font-extrabold mt-2 ml-2 md:ml-4">
+          <span className="text-white">All India</span>{' '}
+          <span className="text-black">Women only Hackathon</span>
+        </p>
+      </div>
+
+      {/* Register Button */}
+      <div className="ml-0 md:ml-24">
+        <button className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white px-8 py-3 rounded-full font-semibold text-lg shadow-lg transition duration-300 transform hover:scale-105">
           Register Now
-        </Button>
+        </button>
+      </div>
 
-        {/* Countdown Timer */}
-        <div className="flex justify-center space-x-6 mb-8">
-          {[
-            { value: timeLeft.days, label: 'Days' },
-            { value: timeLeft.hours, label: 'Hours' },
-            { value: timeLeft.minutes, label: 'Minutes' }
-          ].map((item, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-lg min-w-[120px]">
-              <div className="text-4xl font-bold text-black mb-2">{item.value}</div>
-              <div className="text-purple-600 font-semibold">{item.label}</div>
+      {/* Countdown */}
+      <div className="flex gap-4 mt-10 justify-center md:justify-start">
+        {timerBlocks.map((block, i) => (
+          <div
+            key={i}
+            className="relative bg-white rounded-2xl text-black w-[90px] h-[110px] flex flex-col items-center justify-center shadow-xl hover:scale-105 transition duration-300"
+          >
+            {/* Dots */}
+            <div className="absolute top-2 left-1/2 transform -translate-x-1/2 flex gap-1">
+              <div className="w-2 h-2 bg-black rounded-full" />
+              <div className="w-2 h-2 bg-black rounded-full" />
             </div>
-          ))}
-        </div>
 
-        {/* Illustration */}
-        <div className="relative flex justify-center items-center">
-          <div className="bg-white rounded-3xl p-8 shadow-2xl transform rotate-3 max-w-md mx-auto">
-            <div className="flex items-center justify-center space-x-4 mb-4">
-              <div className="w-16 h-16 bg-purple-200 rounded-full"></div>
-              <div className="w-16 h-16 bg-purple-300 rounded-full"></div>
-            </div>
-            <div className="text-black font-semibold text-lg">#BuiltbyHer</div>
+            <div className="text-4xl font-extrabold">{block.value}</div>
+            <div className="text-purple-600 font-semibold text-sm">{block.label}</div>
           </div>
-          
-          {/* Decorative Elements */}
-          <Heart className="absolute top-4 left-4 text-pink-400 w-8 h-8" />
-          <Lightbulb className="absolute top-2 right-8 text-yellow-400 w-10 h-10" />
-          <div className="absolute bottom-4 left-8 w-12 h-8 bg-red-400 rounded transform rotate-12"></div>
-          <div className="absolute bottom-0 right-4 w-16 h-12 bg-white rounded shadow-lg"></div>
-        </div>
+        ))}
       </div>
     </div>
-  );
-};
 
-export default HeroSection;
+    {/* RIGHT SIDE */}
+    <div className="flex-1 mt-12 md:mt-0">
+      <img
+        src="/herosec.png"
+        alt="SheBuilds Illustration"
+        className="w-full max-w-md mx-auto drop-shadow-xl"
+      />
+    </div>
+  </div>
+</section>
+
+
+  );
+}

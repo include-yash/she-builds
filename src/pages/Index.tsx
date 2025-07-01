@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
@@ -43,31 +42,42 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 relative overflow-hidden">
-      {/* Background Watermark */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 opacity-5">
-          {Array.from({ length: 60 }).map((_, i) => (
-            <div
-              key={i}
-              className="absolute text-white font-bold text-6xl transform rotate-12 select-none"
-              style={{
-                left: `${(i % 8) * 15}%`,
-                top: `${Math.floor(i / 8) * 20}%`,
-                transform: 'rotate(12deg)',
-              }}
-            >
-              SHE BUILDS
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#c3a3fb' }}>
+      {/* ✅ Uniform Background Watermark Grid */}
+      {/* ✅ Clean, evenly spaced watermark background */}
+<div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+  <div
+    style={{
+      position: 'absolute',
+      width: '3000px',
+      height: '5000px',
+      left: '-1200px',
+      top: '-900px',
+      fontFamily: 'Anton, sans-serif',
+      fontWeight: 600,
+      fontSize: '110px',
+      lineHeight: '100%',
+      letterSpacing: '2px',
+      color: 'transparent',
+      WebkitTextStroke: '2px #ffffff', // <- outline effect
+      transform: 'matrix(0.97, -0.25, 0.24, 0.97, 0, 0)',
+      whiteSpace: 'pre-wrap',
+      opacity: 0.14,
+    }}
+  >
+    {Array(100).fill('SHE BUILDS ').join('')}
+  </div>
+</div>
 
+
+
+
+      {/* Actual Page Content */}
       <div className="relative z-10">
         <Header />
         <HeroSection />
         <Navigation activeSection={activeSection} scrollToSection={scrollToSection} />
-        
+
         <div className="space-y-16 pb-16">
           <AboutSection />
           <ProblemStatement />
