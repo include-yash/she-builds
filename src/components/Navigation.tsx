@@ -52,7 +52,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#945cfb] backdrop-blur-md border-b border-white/10 shadow-lg">
-      <div className="relative flex justify-evenly items-center px-4 py-4 max-w-7xl mx-auto">
+      <div className="relative flex overflow-x-auto no-scrollbar justify-start md:justify-evenly items-center px-4 py-4 max-w-7xl mx-auto gap-2 md:gap-0">
         {/* Animated Pill */}
         <div
           ref={indicatorRef}
@@ -68,7 +68,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
             key={item.id}
             ref={(el) => (btnRefs.current[index] = el!)}
             onClick={() => handleClick(item.id)}
-            className={`relative z-10 px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+            className={`relative z-10 px-5 py-2 whitespace-nowrap rounded-full font-medium transition-all duration-300 ${
               localActiveId === item.id
                 ? 'text-purple-600'
                 : 'text-white hover:text-purple-200'

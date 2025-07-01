@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Laptop } from 'lucide-react';
 
 const tracks = [
   { id: 1, title: 'TRACK 1' },
@@ -17,17 +16,20 @@ const ProblemStatement = () => {
         {/* Glowing background */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-600/50 via-purple-500/60 to-indigo-700/50 blur-2xl opacity-30 rounded-3xl" />
 
-        {/* Purple container with content */}
-        <div className="relative z-10 bg-purple-500/90 rounded-3xl p-8 sm:p-10 shadow-2xl">
-          {/* Title with icon */}
-          <div className="text-center mb-12 relative">
-            <h2 className="text-4xl font-extrabold text-white tracking-wide">PROBLEM STATEMENT</h2>
-            <img
-  src="/bulb.png" 
-  alt="Heart"
-  className="w-24 h-24 object-contain -mt-12 -mr-10"
-/>
-          </div>
+        {/* Main container */}
+        <div className="relative z-10 bg-purple-500/90 rounded-3xl p-6 sm:p-10 shadow-2xl overflow-hidden">
+          
+          {/* Title and icon */}
+          <div className="flex flex-col-reverse sm:flex-col items-center justify-center text-center gap-4 mb-12 sm:mb-16">
+  <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-wide">
+    PROBLEM STATEMENT
+  </h2>
+  <img
+    src="/bulb.png"
+    alt="Bulb"
+    className="w-16 h-16 sm:w-24 sm:h-24 object-contain"
+  />
+</div>
 
           {/* Track Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -36,8 +38,8 @@ const ProblemStatement = () => {
                 key={track.id}
                 className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
-                <h3 className="text-2xl font-bold text-center mb-4">{track.title}</h3>
-                <p className="text-gray-700 text-center mb-6 text-md leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold text-center mb-4">{track.title}</h3>
+                <p className="text-gray-700 text-center mb-6 text-sm sm:text-md leading-relaxed">
                   Risk-Based Proctoring System for Online Assessments
                 </p>
                 <div className="text-center">
@@ -48,6 +50,7 @@ const ProblemStatement = () => {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
