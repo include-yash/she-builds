@@ -47,14 +47,14 @@ const Index = () => {
       {/* Background Watermark */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute inset-0 opacity-5">
-          {Array.from({ length: 20 }).map((_, i) => (
+          {Array.from({ length: 60 }).map((_, i) => (
             <div
               key={i}
-              className="absolute text-white font-bold text-8xl transform rotate-12 select-none"
+              className="absolute text-white font-bold text-6xl transform rotate-12 select-none"
               style={{
-                left: `${(i % 5) * 25}%`,
-                top: `${Math.floor(i / 5) * 25}%`,
-                transform: `rotate(${12 + (i % 3) * 5}deg)`,
+                left: `${(i % 8) * 15}%`,
+                top: `${Math.floor(i / 8) * 20}%`,
+                transform: 'rotate(12deg)',
               }}
             >
               SHE BUILDS
