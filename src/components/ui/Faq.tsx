@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    question: 'What is The Great Bengaluru Hackathon?',
+    question: 'What is SheBuilds?',
     answer:
-      'The Great Bengaluru Hackathon is a groundbreaking multi-campus innovation event that unites five premier engineering institutions across Bengaluru. As one of the largest student hackathons in the region, we bring together passionate developers, designers, and problem-solvers in an immersive hackathon experience that spans across multiple locations simultaneously.',
+      'SheBuilds is a groundbreaking women-only hackathon and innovation program that empowers the next generation of women technologists, creators, and changemakers. It brings together passionate developers, designers, and problem-solvers from across India in an immersive, high-impact hackathon experience.',
   },
   {
     question: 'Who can participate?',
     answer:
-      'TGBH welcomes all college students from across India, irrespective of the degree they are pursuing. Whether you\'re an undergraduate (UG) or post-graduate (PG) student, a seasoned programmer, a creative designer, or simply someone enthusiastic about technology and innovation, this hackathon is for you!',
+      'SheBuilds is open exclusively to women students from across India. Whether you\'re an undergraduate (UG) or post-graduate (PG) student, a seasoned programmer, a creative designer, or someone enthusiastic about technology and innovation—this hackathon is for you!',
   },
   {
     question: 'How do I register & submit my idea?',
     answer:
-      'You can register by clicking the "Register Now" button on this page, which redirects to the “TestMyskills” platform for registration & idea submissions.',
+      'You can register by clicking the "Apply with Devfolio" button on this page, which redirects to the Devfolio platform for registration & idea submissions.',
   },
   {
     question: 'Is there a registration fee?',
@@ -23,7 +23,7 @@ const faqs = [
   {
     question: 'Can I participate alone, or do I need a team?',
     answer:
-      'You can participate either as an individual or in a team of up to 4 members. The team can be of interdisciplinary & intercollege participants.',
+      'You can participate either as an individual or in a team of up to 4 members. The team can include participants from different colleges and disciplines—as long as all are women.',
   },
   {
     question: 'What if I’m a beginner?',
