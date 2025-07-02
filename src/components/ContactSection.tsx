@@ -52,7 +52,7 @@ const ContactSection = () => {
     <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0"> {/* space-y-6 → space-y-8 */}
       
       {/* Links */}
-      <div className="flex space-x-10 text-2xl"> {/* text-sm → text-lg, space-x-6 → space-x-10 */}
+      <div className="flex space-x-10 text-2xl font-bold"> {/* text-sm → text-lg, space-x-6 → space-x-10 */}
         <a href="/code-of-conduct" className="hover:underline">
           Code of Conduct
         </a>
