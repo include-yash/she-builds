@@ -19,19 +19,19 @@ const Index = ({ activeSection, scrollToSection }: IndexProps) => {
         scrollToSection={scrollToSection}
       />
       <main className="bg-black min-h-screen text-white scroll-smooth">
-        <section id="about" className="py-20">
+        <section id="about" className="py-10">
           <AboutSection />
         </section>
-        <section id="problem-statement" className="py-20">
+        <section id="problem-statement" className="py-10">
           <ProblemStatement />
         </section>
-        <section id="prizes" className="py-20">
+        <section id="prizes" className="py-10">
           <PrizePool />
         </section>
-        <section id="who-can-apply" className="py-20">
+        <section id="who-can-apply" className="py-10">
           <ContactSection />
         </section>
-        <section id="timelines" className="py-20">
+        <section id="timelines" className="py-10">
           <Timeline />
         </section>
       </main>

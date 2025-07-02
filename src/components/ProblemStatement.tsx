@@ -32,17 +32,20 @@ const ProblemStatement = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-purple-800/20 pointer-events-none" />
 
           <div className="relative z-10">
-            {/* Enhanced title and icon */}
-            <div className="flex flex-col-reverse sm:flex-col items-center justify-center text-center gap-3 mb-8 sm:mb-10">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg">
-                PROBLEM STATEMENT
-              </h2>
-              <div className="relative group">
+            {/* Fixed title and icon - always in row layout */}
+            <div className="flex items-center justify-center gap-3 mb-8 sm:mb-10">
+              <div className="flex-1 text-center">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg">
+                  PROBLEM STATEMENT
+                </h2>
+              </div>
+              
+              <div className="relative group flex-shrink-0">
                 <div className="absolute inset-0 bg-white/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300" />
                 <img
                   src="/bulb.png"
                   alt="Bulb"
-                  className="relative w-14 h-14 sm:w-20 sm:h-20 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+                  className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
             </div>
