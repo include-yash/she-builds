@@ -11,7 +11,7 @@ const PrizePool = () => {
   ];
 
   return (
-    <section id="prizes" className="px-4 sm:px-6 lg:px-8 py-20 sm:py-24 relative overflow-hidden">
+    <section id="prizes" className="px-4 sm:px-6 lg:px-8 py-10 sm:py-22 relative overflow-hidden">
       {/* Fun floating elements */}
       <div className="absolute inset-0 pointer-events-none">
         <Sparkles className="absolute top-20 left-10 w-6 h-6 text-purple-300/40 animate-pulse" />

@@ -16,7 +16,7 @@ const WhoCanApply = () => {
                 Who Can Apply?
               </h2>
               <p className="mt-2 text-sm sm:text-base text-white/80 font-light max-w-md">
-                Open to passionate women from all walks of life ready to innovate and lead.
+                We welcome driven women innovators, leaders, and learners who are ready to challenge boundaries and shape the future.
               </p>
             </div>
 
@@ -32,11 +32,11 @@ const WhoCanApply = () => {
           {/* Description */}
           <div className="relative text-left text-lg sm:text-xl md:text-2xl font-medium space-y-4">
             <p className="text-white font-semibold border-b border-white/20 pb-2">
-              Women eligible include:
+              Eligibility Criteria:
             </p>
             <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-white/90">
-              <li>Working Professionals - (less than 2 yrs Exp.)</li>
-              <li>Students</li>
+              <li>Women professionals with less than 2 years of industry experience</li>
+              <li>Female students currently pursuing undergraduate or postgraduate education</li>
             </ul>
           </div>
 

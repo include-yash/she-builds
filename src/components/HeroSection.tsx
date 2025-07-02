@@ -61,11 +61,10 @@ export default function HeroSection() {
           </div>
 
           {/* Company Logos */}
-          <div className="w-full flex flex-wrap justify-center md:justify-start gap-6 mt-4 md:mt-6 px-2">
-            <img src="/bng.png" alt="Company 1" className="h-12 md:h-14 object-contain" />
-            <img src="/bng1.png" alt="Company 2" className="h-12 md:h-14 object-contain" />
-            <img src="/bng2.png" alt="Company 3" className="h-12 md:h-14 object-contain" />
-            <img src="/bng3.png" alt="Company 4" className="h-12 md:h-14 object-contain" />
+          <div className="w-full flex justify-center md:justify-start items-center space-x-0 mt-4 md:mt-6 px-0">
+            <img src="/Black Full Logo.png" alt="Company 1" className="h-8 object-contain" />
+            <img src="/ht.png" alt="Company 2" className="h-8 object-contain" />
+            <img src="/tms.png" alt="Company 3" className="h-8 object-contain" />
           </div>
 
           {/* Countdown */}

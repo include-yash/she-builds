@@ -9,6 +9,7 @@ import WhoCanApply from '../components/WhoCanApply';
 import Timeline from '../components/Timeline';
 import Partners from '../components/Partners';
 import ContactSection from '../components/ContactSection';
+import Footer from "@/components/ui/Footer";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('about');

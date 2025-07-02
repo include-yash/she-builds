@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import FaqSection from './ui/Faq';
 
 const timelineEvents = [
   { date: '5th - 20th July', title: 'Registrations' },
@@ -12,7 +13,8 @@ const timelineEvents = [
 
 const Timeline = () => {
   return (
-    <section id="timelines" className="px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+    <>
+    <section id="timelines" className="px-4 sm:px-6 lg:px-8 py-24 sm:py-14">
       <div className="max-w-7xl mx-auto">
         <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
 
@@ -63,6 +65,8 @@ const Timeline = () => {
         </div>
       </div>
     </section>
+    <FaqSection/>
+    </>
   );
 };
 

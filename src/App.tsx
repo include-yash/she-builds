@@ -28,6 +28,7 @@ const App = () => {
       "prizes",
       "who-can-apply",
       "timelines",
+      "footer",
     ];
 
     const handleScroll = () => {

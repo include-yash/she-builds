@@ -13,7 +13,7 @@ const ProblemStatement = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <section id="problem-statement" className="px-4 sm:px-6 lg:px-8 py-12">
+    <section id="problem-statement" className="px-4 sm:px-6 lg:px-8 py-0">
       <div className="max-w-7xl mx-auto relative z-10">
 
         {/* Enhanced glowing background */}
