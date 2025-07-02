@@ -19,7 +19,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="bg-purple-600 rounded-3xl p-10 shadow-2xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
-            WHO CAN APPLY?
+            CONTACT US
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-white">

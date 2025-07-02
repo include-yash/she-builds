@@ -3,32 +3,39 @@ import { Button } from '@/components/ui/button';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-lg px-7 py-2 flex justify-between items-center">
-      {/* Logo */}
-<div className="flex items-center space-x-2">
-  {/* Replace 'logo.png' with your actual image file path */}
-  <img
-    src="/logo.png"
-    alt="VLIV Logo"
-    className="h-5 w-auto px-10"
-  />
-</div>
+    <header className="bg-white shadow-lg px-4 sm:px-6 lg:px-20 py-3 flex justify-between items-center">
+      
+      {/* Logo Block */}
+      <div className="flex items-center space-x-4">
+        {/* First Logo */}
+        <img
+          src="/logo.png"
+          alt="VLIV Logo"
+          className="h-6 sm:h-7 md:h-8 w-auto"
+        />
 
+        {/* Vertical Separator */}
+        <div className="w-px h-6 bg-gray-300" />
 
-      {/* Call‑to‑action */}
+        {/* Second Logo */}
+        <img
+          src="/Black Full Logo.png"
+          alt="VLIV Full Logo"
+          className="h-6 sm:h-7 md:h-8 w-auto"
+        />
+      </div>
+
+      {/* CTA Button */}
       <Button
         className={`
           bg-gradient-to-br from-purple-600 to-purple-800 
-          text-white 
-          font-semibold 
-          px-6 
-          py-2 
+          text-white font-semibold 
+          text-sm sm:text-base 
+          px-5 sm:px-6 md:px-8 
+          py-1.5 sm:py-2 
           rounded-full 
-          shadow-sm 
-          transition-shadow 
-          duration-200 
-          hover:shadow-md 
-          active:shadow-inner
+          shadow-sm transition duration-200 
+          hover:shadow-md active:shadow-inner
         `}
       >
         Register Now

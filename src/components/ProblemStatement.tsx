@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { ChevronRight } from 'lucide-react';
 
 const tracks = [
   { id: 1, title: 'TRACK 1' },
@@ -9,46 +10,82 @@ const tracks = [
 ];
 
 const ProblemStatement = () => {
+  const [hoveredCard, setHoveredCard] = useState(null);
+
   return (
-    <section id="problem-statement" className="px-4 sm:px-6 lg:px-8 py-20">
+    <section id="problem-statement" className="px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* Glowing background */}
+        {/* Enhanced glowing background */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-600/50 via-purple-500/60 to-indigo-700/50 blur-2xl opacity-30 rounded-3xl" />
+        
+        {/* Additional animated background elements */}
+        <div className="absolute inset-0 overflow-hidden rounded-3xl">
+          <div className="absolute -top-20 -right-20 w-48 h-48 bg-purple-400/20 rounded-full blur-2xl animate-pulse" />
+          <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-indigo-400/20 rounded-full blur-2xl animate-pulse delay-1000" />
+        </div>
 
-        {/* Main container */}
-        <div className="relative z-10 bg-purple-500/90 rounded-3xl p-6 sm:p-10 shadow-2xl overflow-hidden">
-          
-          {/* Title and icon */}
-          <div className="flex flex-col-reverse sm:flex-col items-center justify-center text-center gap-4 mb-12 sm:mb-16">
-  <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-wide">
-    PROBLEM STATEMENT
-  </h2>
-  <img
-    src="/bulb.png"
-    alt="Bulb"
-    className="w-16 h-16 sm:w-24 sm:h-24 object-contain"
-  />
-</div>
+        {/* Main container with enhanced styling */}
+        <div className="relative z-10 backdrop-blur-sm bg-purple-500/90 rounded-2xl p-4 sm:p-6 shadow-2xl overflow-hidden border border-purple-400/30">
 
-          {/* Track Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {tracks.map((track) => (
-              <div
-                key={track.id}
-                className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <h3 className="text-xl sm:text-2xl font-bold text-center mb-4">{track.title}</h3>
-                <p className="text-gray-700 text-center mb-6 text-sm sm:text-md leading-relaxed">
-                  Risk-Based Proctoring System for Online Assessments
-                </p>
-                <div className="text-center">
-                  <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full w-full transition duration-300">
-                    Know More
-                  </Button>
-                </div>
+          {/* Subtle overlay gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-purple-800/20 pointer-events-none" />
+
+          <div className="relative z-10">
+            {/* Enhanced title and icon */}
+            <div className="flex flex-col-reverse sm:flex-col items-center justify-center text-center gap-3 mb-8 sm:mb-10">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg">
+                PROBLEM STATEMENT
+              </h2>
+              <div className="relative group">
+                <div className="absolute inset-0 bg-white/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300" />
+                <img
+                  src="/bulb.png"
+                  alt="Bulb"
+                  className="relative w-14 h-14 sm:w-20 sm:h-20 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-            ))}
+            </div>
+
+            {/* Enhanced Track Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {tracks.map((track, index) => (
+                <div
+                  key={track.id}
+                  className="group relative"
+                  onMouseEnter={() => setHoveredCard(track.id)}
+                  onMouseLeave={() => setHoveredCard(null)}
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  {/* Card glow effect */}
+                  <div className="absolute inset-0 bg-purple-400/30 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  {/* Enhanced card */}
+                  <div className="relative backdrop-blur-sm bg-white/95 rounded-xl p-4 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500 border border-white/50 group-hover:border-purple-200/50">
+                    
+                    {/* Subtle inner glow */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    <div className="relative z-10">
+                      <h3 className="text-lg sm:text-xl font-bold text-center mb-2 text-gray-800 group-hover:text-purple-700 transition-colors duration-300">
+                        {track.title}
+                      </h3>
+                      
+                      <p className="text-gray-700 text-center mb-4 text-sm leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
+                        Risk-Based Proctoring System for Online Assessments
+                      </p>
+                      
+                      <div className="text-center">
+                        <Button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-1.5 rounded-full w-full transition-all duration-300 text-sm shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2">
+                          <span>Know More</span>
+                          <ChevronRight className="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1" />
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>

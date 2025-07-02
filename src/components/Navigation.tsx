@@ -11,7 +11,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
     { id: 'problem-statement', label: 'Problem Statement' },
     { id: 'prizes', label: 'Prizes' },
     { id: 'who-can-apply', label: 'Who can apply' },
-    { id: 'timelines', label: 'Timelines' }
+    { id: 'timelines', label: 'Timelines' },
   ];
 
   const btnRefs = useRef<HTMLButtonElement[]>([]);
@@ -31,7 +31,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
       if (parentRect) {
         setIndicatorStyle({
           left: rect.left - parentRect.left,
-          width: rect.width
+          width: rect.width,
         });
       }
     }
@@ -52,23 +52,25 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#945cfb] backdrop-blur-md border-b border-white/10 shadow-lg">
-      <div className="relative flex overflow-x-auto no-scrollbar justify-start md:justify-evenly items-center px-4 py-4 max-w-7xl mx-auto gap-2 md:gap-0">
-        {/* Animated Pill */}
+      <div className="relative flex overflow-x-auto no-scrollbar justify-start md:justify-evenly items-center px-4 py-5 max-w-7xl mx-auto gap-3 md:gap-0">
+        
+        {/* Animated Indicator */}
         <div
           ref={indicatorRef}
           className="absolute top-1/2 -translate-y-1/2 h-10 bg-white rounded-full shadow-md transition-all duration-500"
           style={{
             left: indicatorStyle.left,
-            width: indicatorStyle.width
+            width: indicatorStyle.width,
           }}
         />
-        {/* Buttons */}
+
+        {/* Navigation Buttons */}
         {navItems.map((item, index) => (
           <button
             key={item.id}
             ref={(el) => (btnRefs.current[index] = el!)}
             onClick={() => handleClick(item.id)}
-            className={`relative z-10 px-5 py-2 whitespace-nowrap rounded-full font-medium transition-all duration-300 ${
+            className={`relative z-10 px-6 py-2 whitespace-nowrap rounded-full font-semibold text-base sm:text-lg md:text-xl transition-all duration-300 ${
               localActiveId === item.id
                 ? 'text-purple-600'
                 : 'text-white hover:text-purple-200'

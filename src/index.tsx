@@ -1,10 +1,10 @@
 import React from "react";
 import Navigation from "@/components/Navigation";
-import AboutSection from "@/components/sections/AboutSection";
-import ProblemStatement from "@/components/sections/ProblemStatement";
-import PrizePool from "@/components/sections/PrizePool";
-import Timeline from "@/components/sections/Timeline";
-import ContactSection from "@/components/sections/ContactSection";
+import AboutSection from "@/components/AboutSection";
+import ProblemStatement from "@/components/ProblemStatement";
+import PrizePool from "@/components/PrizePool";
+import Timeline from "@/components/Timeline";
+import ContactSection from "@/components/ContactSection";
 
 interface IndexProps {
   activeSection: string;
@@ -19,19 +19,19 @@ const Index = ({ activeSection, scrollToSection }: IndexProps) => {
         scrollToSection={scrollToSection}
       />
       <main className="bg-black min-h-screen text-white scroll-smooth">
-        <section id="about">
+        <section id="about" className="py-20">
           <AboutSection />
         </section>
-        <section id="problem-statement">
+        <section id="problem-statement" className="py-20">
           <ProblemStatement />
         </section>
-        <section id="prizes">
+        <section id="prizes" className="py-20">
           <PrizePool />
         </section>
-        <section id="who-can-apply">
+        <section id="who-can-apply" className="py-20">
           <ContactSection />
         </section>
-        <section id="timelines">
+        <section id="timelines" className="py-20">
           <Timeline />
         </section>
       </main>

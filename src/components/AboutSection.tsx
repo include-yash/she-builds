@@ -8,8 +8,7 @@ const AboutSection = () => {
           {/* Title and Image - Responsive flex-wrap */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-purple-600 mb-1 sm:mb-2">ABOUT</h2>
-              <h3 className="text-3xl sm:text-4xl font-bold text-purple-600">SHE BUILDS</h3>
+              <h2 className="text-3xl sm:text-4xl font-bold text-purple-600 mb-1 sm:mb-2">ABOUT SHE BUILDS</h2>
             </div>
 
             {/* Responsive Image */}
@@ -23,10 +22,8 @@ const AboutSection = () => {
           {/* Description */}
           <div className="text-gray-800 text-xl sm:text-3xl leading-relaxed">
             <p>
-              The <span className="font-bold">Great Bengaluru Hackathon</span> is a groundbreaking multi-campus
-              innovation event that unites five premier engineering institutions across Bengaluru. As one of the
-              largest student hackathons in the region, we bring together passionate developers, designers, and
-              problem-solvers in an immersive hackathon experience that spans across multiple locations simultaneously.
+              SheBuilds is a <span className=' font-bold'>24-hour women-centric</span> innovation sprint where developers, designers, and builders from across India come together to solve real-world problems through technology and creativity — SheBuilds is a launchpad for women in tech to innovate, inspire, and lead.
+
             </p>
           </div>
         </div>

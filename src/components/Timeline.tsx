@@ -3,11 +3,11 @@ import { MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const timelineEvents = [
-  { date: 'February 10th - 12th', title: 'Registrations' },
-  { date: 'March 10th', title: 'Shortlisting' },
-  { date: 'March 20th', title: 'Hackathon Begins' },
-  { date: 'March 25th', title: 'Project Submission' },
-  { date: 'March 30th', title: 'Grand Finale' },
+  { date: '5th - 20th July', title: 'Registrations' },
+  { date: '10th - 20th July', title: 'Idea Submission' },
+  { date: '27th July', title: 'Shortlisting' },
+  { date: '29th July', title: 'AMA Session' },
+  { date: '1st & 2nd August', title: 'Hackathon' },
 ];
 
 const Timeline = () => {
