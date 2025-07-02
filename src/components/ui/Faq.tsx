@@ -14,7 +14,7 @@ const faqs = [
   {
     question: 'How do I register & submit my idea?',
     answer:
-      'You can register by clicking the "Apply with Devfolio" button on this page, which redirects to the Devfolio platform for registration & idea submissions.',
+      'You can register by clicking the "Register Now" button on this page, which redirects to the Devfolio platform for registration & idea submissions.',
   },
   {
     question: 'Is there a registration fee?',
@@ -23,7 +23,7 @@ const faqs = [
   {
     question: 'Can I participate alone, or do I need a team?',
     answer:
-      'You can participate either as an individual or in a team of up to 4 members. The team can include participants from different colleges and disciplines—as long as all are women.',
+      'Participation is allowed only in teams of 2 to 4 members. The team can include participants from different colleges and disciplines—as long as all are women.',
   },
   {
     question: 'What if I’m a beginner?',
@@ -33,7 +33,7 @@ const faqs = [
   {
     question: 'How do I stay updated?',
     answer:
-      'Join the WhatsApp group for seamless communication & discussion: https://chat.whatsapp.com/HEuWrIRI3RC2d508a4dMD3',
+      'Join the WhatsApp group for seamless communication & discussion: https://chat.whatsapp.com/Kw8s9m6uMfF7CAaCzmhqdP',
   },
   {
     question: 'Will there be any hardware provided?',
