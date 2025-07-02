@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 const CountdownBlock = () => {
-  const targetDate = new Date('2025-03-15T10:00:00');
+  // Set targetDate to 29 days from now
+  const getTargetDate = () => {
+    const now = new Date();
+    now.setDate(now.getDate() + 29);
+    return now;
+  };
+
+  const targetDate = getTargetDate();
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -37,7 +44,7 @@ const CountdownBlock = () => {
         <div className="grid grid-cols-3 text-center sm:text-left">
           <div className="border border-black px-3 py-3 dark:border-white rounded-tl-xl">
             <p className="mb-1 text-[10px] sm:text-xs uppercase">date</p>
-            <p className="text-xs sm:text-sm font-bold">15th and 16th March 2025</p>
+            <p className="text-xs sm:text-sm font-bold">29 Days From Today</p>
           </div>
           <div className="border border-black px-3 py-3 dark:border-white">
             <p className="mb-1 text-[10px] sm:text-xs uppercase">time</p>
