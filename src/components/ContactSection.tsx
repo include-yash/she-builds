@@ -3,7 +3,7 @@ import {
   FaInstagram,
   FaXTwitter,
   FaLinkedin,
-} from 'react-icons/fa6'; // Make sure you have react-icons installed
+} from 'react-icons/fa6';
 
 const ContactSection = () => {
   const contacts = [
@@ -22,7 +22,7 @@ const ContactSection = () => {
   return (
     <>
       {/* Contact Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-6">
+      <section className="px-4 sm:px-6 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto">
           <div className="bg-purple-600 rounded-3xl p-10 shadow-2xl">
             <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
@@ -45,37 +45,50 @@ const ContactSection = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
+      {/* Simple Full-Width Separator Line */}
+      <hr className="border-t-2 border-white w-full my-4" />
 
-<footer className="text-white py-8 bg-purple-600"> {/* Increased py-10 → py-16 */}
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0"> {/* space-y-6 → space-y-8 */}
+
+
+      {/* Footer Section (Transparent, 3D text) */}
+      <footer className="text-white py-0">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+    <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 text-center md:text-left">
       
       {/* Links */}
-      <div className="flex space-x-10 text-2xl font-bold"> {/* text-sm → text-lg, space-x-6 → space-x-10 */}
-        <a href="/code-of-conduct" className="hover:underline">
+      <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-2xl font-bold">
+        <a
+          href="https://accidental-potato-870.notion.site/Vliv-presents-SheBuild-Hackathon-224ce9ad774880718a22c14db3c4bd6f"
+          className="hover:underline"
+          style={{ textShadow: '2px 2px 0 #a78bfa' }}
+        >
           Code of Conduct
         </a>
         <a
           href="https://www.termsfeed.com/live/33515683-37c6-4f27-acd9-9ba55d07281b"
           className="hover:underline"
+          style={{ textShadow: '2px 2px 0 #a78bfa' }}
         >
           Privacy Policy
         </a>
-        <a href="https://bento.me/hackculture" className="hover:underline">
+        <a
+          href="https://bento.me/hackculture"
+          className="hover:underline"
+          style={{ textShadow: '2px 2px 0 #a78bfa' }}
+        >
           Join Community
         </a>
       </div>
 
       {/* Social Icons */}
-      <div className="flex space-x-10 text-3xl"> {/* text-xl → text-3xl, space-x-6 → space-x-10 */}
+      <div className="flex justify-center md:justify-end space-x-10 text-3xl">
         <a
           href="https://www.instagram.com/hackculture.in/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-          <FaInstagram className="hover:text-purple-400 transition" />
+          <FaInstagram className="hover:text-purple-400 transition" style={{ textShadow: '2px 2px 0 #a78bfa' }} />
         </a>
         <a
           href="https://x.com/Hack_Culture"
@@ -83,7 +96,7 @@ const ContactSection = () => {
           rel="noopener noreferrer"
           aria-label="X"
         >
-          <FaXTwitter className="hover:text-purple-400 transition" />
+          <FaXTwitter className="hover:text-purple-400 transition" style={{ textShadow: '2px 2px 0 #a78bfa' }} />
         </a>
         <a
           href="https://www.linkedin.com/company/hackculture/"
@@ -91,12 +104,13 @@ const ContactSection = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin className="hover:text-purple-400 transition" />
+          <FaLinkedin className="hover:text-purple-400 transition" style={{ textShadow: '2px 2px 0 #a78bfa' }} />
         </a>
       </div>
     </div>
   </div>
 </footer>
+
 
     </>
   );

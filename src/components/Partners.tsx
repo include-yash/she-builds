@@ -18,12 +18,12 @@ const Partners = () => {
             {partnerLogos.map((src, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl h-32 flex items-center justify-center shadow-xl overflow-hidden"
+                className="bg-gradient-to-br from-white to-white rounded-2xl h-40 flex items-center justify-center shadow-[8px_8px_0px_#a78bfa] hover:shadow-[12px_12px_0px_#7c3aed] transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 perspective-1000"
               >
                 <img
                   src={src}
                   alt={`Partner ${index + 1}`}
-                  className="max-h-10 object-contain"
+                  className="max-h-16 object-contain px-6"
                 />
               </div>
             ))}

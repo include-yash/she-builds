@@ -8,7 +8,7 @@ const timelineEvents = [
   { date: '10th - 20th July', title: 'Idea Submission' },
   { date: '27th July', title: 'Shortlisting' },
   { date: '29th July', title: 'AMA Session' },
-  { date: '1st & 2nd August', title: 'Hackathon' },
+  { date: '1st & 2nd August', title: '24 hrs Hackathon Day' },
 ];
 
 const Timeline = () => {

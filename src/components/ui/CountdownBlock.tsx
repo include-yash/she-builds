@@ -44,7 +44,7 @@ const CountdownBlock = () => {
         <div className="grid grid-cols-3 text-center sm:text-left">
           <div className="border border-black px-3 py-3 dark:border-white rounded-tl-xl">
             <p className="mb-1 text-[10px] sm:text-xs uppercase">date</p>
-            <p className="text-xs sm:text-sm font-bold">29 Days From Today</p>
+            <p className="text-xs sm:text-sm font-bold">1st & 2nd Aug 2025</p>
           </div>
           <div className="border border-black px-3 py-3 dark:border-white">
             <p className="mb-1 text-[10px] sm:text-xs uppercase">time</p>
@@ -52,7 +52,7 @@ const CountdownBlock = () => {
           </div>
           <div className="border border-black px-3 py-3 dark:border-white rounded-tr-xl">
             <p className="mb-1 text-[10px] sm:text-xs uppercase">venue</p>
-            <p className="text-xs sm:text-sm font-bold">Bengaluru</p>
+            <p className="text-xs sm:text-sm font-bold">Greater Noida</p>
           </div>
         </div>
 
