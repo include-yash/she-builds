@@ -1,87 +1,80 @@
 import React from "react";
+import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-700 text-white px-4 py-10">
-      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-8 text-center">
-        
-        {/* Brand */}
-        <div>
-          <h3 className="text-2xl font-bold">HackCulture</h3>
-          <p className="text-sm mt-1 max-w-md">
-            Building the future through innovation and community.
-          </p>
-        </div>
+    <footer className="bg-purple-800 text-white text-xs sm:text-sm py-4 sm:py-6 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+        <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-4 sm:gap-0 text-center sm:text-left">
 
-        {/* Links */}
-        <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-          <a
-            href="https://chat.whatsapp.com/HEuWrIRI3RC2d508a4dMD3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-white/80 transition"
-          >
-            Join Community
-          </a>
-          <a
-            href="https://www.termsfeed.com/live/33515683-37c6-4f27-acd9-9ba55d07281b"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-white/80 transition"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="https://tinyurl.com/TGBHCOC"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-white/80 transition"
-          >
-            Code of Conduct
-          </a>
-        </div>
+          {/* Links */}
+          <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2 font-semibold">
+            <a
+              href="https://accidental-potato-870.notion.site/Vliv-presents-SheBuild-Hackathon-224ce9ad774880718a22c14db3c4bd6f"
+              className="hover:underline"
+              style={{ textShadow: "1px 1px 0 #a78bfa" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code of Conduct
+            </a>
+            <a
+              href="https://www.termsfeed.com/live/33515683-37c6-4f27-acd9-9ba55d07281b"
+              className="hover:underline"
+              style={{ textShadow: "1px 1px 0 #a78bfa" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://bento.me/hackculture"
+              className="hover:underline"
+              style={{ textShadow: "1px 1px 0 #a78bfa" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Community
+            </a>
+          </div>
 
-        {/* Social Icons */}
-        <div className="flex items-center space-x-6">
-          <a
-            href="https://www.linkedin.com/company/hackculture/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="hover:text-white/80 transition"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 448 512">
-              <path d="M416 32H31.9C14.3 32 0...z" />
-            </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/hackculture.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="hover:text-white/80 transition"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 448 512">
-              <path d="M224.1 141c-63.6...z" />
-            </svg>
-          </a>
-          <a
-            href="https://x.com/Hack_Culture"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            className="hover:text-white/80 transition"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 512 512">
-              <path d="M389.2 48h70.6...z" />
-            </svg>
-          </a>
+          {/* Social Icons */}
+          <div className="flex justify-center sm:justify-end gap-5 text-lg sm:text-xl w-full sm:w-auto">
+            <a
+              href="https://www.instagram.com/hackculture.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram
+                className="hover:text-purple-300 transition"
+                style={{ textShadow: "1px 1px 0 #a78bfa" }}
+              />
+            </a>
+            <a
+              href="https://x.com/Hack_Culture"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <FaXTwitter
+                className="hover:text-purple-300 transition"
+                style={{ textShadow: "1px 1px 0 #a78bfa" }}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/hackculture/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin
+                className="hover:text-purple-300 transition"
+                style={{ textShadow: "1px 1px 0 #a78bfa" }}
+              />
+            </a>
+          </div>
         </div>
-
-        {/* Copyright */}
-        <p className="text-xs text-white/70 pt-2">
-          © 2024 HackCulture. Crafted with passion for community.
-        </p>
       </div>
     </footer>
   );
