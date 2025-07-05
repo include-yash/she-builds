@@ -2,7 +2,7 @@ const Partners = () => {
   const partnerData = [
     {
       src: '/Black Full Logo.png',
-      link: 'http://www.hackculture.in',
+      link: 'https://www.hackculture.in',
     },
     {
       src: '/htv.jpg',
@@ -10,7 +10,7 @@ const Partners = () => {
     },
     {
       src: '/tms.png',
-      link: 'http://www.testmyskills.ai',
+      link: 'https://testmyskills.ai/',
     },
   ];
 
