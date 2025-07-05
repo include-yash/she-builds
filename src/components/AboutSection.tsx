@@ -8,7 +8,10 @@ const AboutSection = () => {
           {/* Title and Image - Always in row layout */}
           <div className="flex justify-between items-start mb-6 gap-4">
             <div className="flex-1">
-              <h2 className="text-3xl sm:text-4xl font-bold text-purple-600 mb-1 sm:mb-2">ABOUT SHE BUILDS</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-purple-600 leading-tight mb-2">
+  ABOUT<br />SHE BUILDS
+</h2>
+
             </div>
 
             {/* Image always on the right side */}

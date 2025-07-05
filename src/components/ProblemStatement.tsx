@@ -5,8 +5,6 @@ import { ChevronRight, Lock } from 'lucide-react';
 const tracks = [
   { id: 1, title: 'TRACK 1' },
   { id: 2, title: 'TRACK 2' },
-  { id: 3, title: 'TRACK 3' },
-  { id: 4, title: 'TRACK 4' }
 ];
 
 const ProblemStatement = () => {
@@ -15,7 +13,6 @@ const ProblemStatement = () => {
   return (
     <section id="problem-statement" className="px-4 sm:px-6 lg:px-8 py-0">
       <div className="max-w-7xl mx-auto relative z-10">
-
         {/* Glowing Background */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-600/50 via-purple-500/60 to-indigo-700/50 blur-2xl opacity-30 rounded-3xl" />
         
@@ -50,7 +47,7 @@ const ProblemStatement = () => {
             </div>
 
             {/* Track Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {tracks.map((track, index) => (
   <div
     key={track.id}

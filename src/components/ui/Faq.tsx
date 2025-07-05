@@ -7,9 +7,13 @@ const faqs = [
       'SheBuilds is a groundbreaking women-only hackathon and innovation program that empowers the next generation of women technologists, creators, and changemakers. It brings together passionate developers, designers, and problem-solvers from across India in an immersive, high-impact hackathon experience.',
   },
   {
-    question: 'Who can participate?',
-    answer:
-      'SheBuilds is open exclusively to women students from across India. Whether you\'re an undergraduate (UG) or post-graduate (PG) student, a seasoned programmer, a creative designer, or someone enthusiastic about technology and innovation—this hackathon is for you!',
+  question: 'Who can participate?',
+  answer: (
+    <ul className="list-disc list-inside space-y-1">
+      <li>Women professionals with up to 3 years of industry experience</li>
+      <li>Female students currently pursuing undergraduate or postgraduate education</li>
+    </ul>
+  ),
   },
   {
     question: 'How do I register & submit my idea?',
@@ -31,10 +35,21 @@ const faqs = [
       'No worries! Hackathons are a great way to learn and grow. We’ll also have mentors to guide you throughout the event.',
   },
   {
-    question: 'How do I stay updated?',
-    answer:
-      'Join the WhatsApp group for seamless communication & discussion: https://chat.whatsapp.com/Kw8s9m6uMfF7CAaCzmhqdP',
-  },
+  question: 'How do I stay updated?',
+  answer: (
+    <p>
+      Join the WhatsApp group for seamless communication & discussion:&nbsp;
+      <a
+        href="https://chat.whatsapp.com/BJznM3FLO69JFpIPYQQu3V?mode=r_t"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-purple-600 underline font-medium"
+      >
+        Join here
+      </a>
+    </p>
+  ),
+},
   {
     question: 'Will there be any hardware provided?',
     answer:

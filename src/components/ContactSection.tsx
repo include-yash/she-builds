@@ -45,73 +45,66 @@ const ContactSection = () => {
         </div>
       </section>
 
-      {/* Simple Full-Width Separator Line */}
-      <hr className="border-t-2 border-white w-full my-4" />
+      {/* Footer Section */}
+      <footer className="bg-purple-800 text-white text-sm py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
 
+            {/* Links */}
+            <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-2 sm:space-y-0 font-semibold">
+              <a
+                href="https://accidental-potato-870.notion.site/Vliv-presents-SheBuild-Hackathon-224ce9ad774880718a22c14db3c4bd6f"
+                className="hover:underline"
+                style={{ textShadow: '1px 1px 0 #a78bfa' }}
+              >
+                Code of Conduct
+              </a>
+              <a
+                href="https://www.termsfeed.com/live/33515683-37c6-4f27-acd9-9ba55d07281b"
+                className="hover:underline"
+                style={{ textShadow: '1px 1px 0 #a78bfa' }}
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://bento.me/hackculture"
+                className="hover:underline"
+                style={{ textShadow: '1px 1px 0 #a78bfa' }}
+              >
+                Join Community
+              </a>
+            </div>
 
-
-      {/* Footer Section (Transparent, 3D text) */}
-      <footer className="text-white py-0">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-    <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 text-center md:text-left">
-      
-      {/* Links */}
-      <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-2xl font-bold">
-        <a
-          href="https://accidental-potato-870.notion.site/Vliv-presents-SheBuild-Hackathon-224ce9ad774880718a22c14db3c4bd6f"
-          className="hover:underline"
-          style={{ textShadow: '2px 2px 0 #a78bfa' }}
-        >
-          Code of Conduct
-        </a>
-        <a
-          href="https://www.termsfeed.com/live/33515683-37c6-4f27-acd9-9ba55d07281b"
-          className="hover:underline"
-          style={{ textShadow: '2px 2px 0 #a78bfa' }}
-        >
-          Privacy Policy
-        </a>
-        <a
-          href="https://bento.me/hackculture"
-          className="hover:underline"
-          style={{ textShadow: '2px 2px 0 #a78bfa' }}
-        >
-          Join Community
-        </a>
-      </div>
-
-      {/* Social Icons */}
-      <div className="flex justify-center md:justify-end space-x-10 text-3xl">
-        <a
-          href="https://www.instagram.com/hackculture.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <FaInstagram className="hover:text-purple-400 transition" style={{ textShadow: '2px 2px 0 #a78bfa' }} />
-        </a>
-        <a
-          href="https://x.com/Hack_Culture"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="X"
-        >
-          <FaXTwitter className="hover:text-purple-400 transition" style={{ textShadow: '2px 2px 0 #a78bfa' }} />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/hackculture/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin className="hover:text-purple-400 transition" style={{ textShadow: '2px 2px 0 #a78bfa' }} />
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-end space-x-6 text-lg">
+              <a
+                href="https://www.instagram.com/hackculture.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="hover:text-purple-300 transition" style={{ textShadow: '1px 1px 0 #a78bfa' }} />
+              </a>
+              <a
+                href="https://x.com/Hack_Culture"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <FaXTwitter className="hover:text-purple-300 transition" style={{ textShadow: '1px 1px 0 #a78bfa' }} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/hackculture/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="hover:text-purple-300 transition" style={{ textShadow: '1px 1px 0 #a78bfa' }} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

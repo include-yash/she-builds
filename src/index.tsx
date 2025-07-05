@@ -5,7 +5,7 @@ import ProblemStatement from "@/components/ProblemStatement";
 import PrizePool from "@/components/PrizePool";
 import Timeline from "@/components/Timeline";
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/Footer";
 
 interface IndexProps {
   activeSection: string;
