@@ -9,7 +9,7 @@ import WhoCanApply from '../components/WhoCanApply';
 import Timeline from '../components/Timeline';
 import Partners from '../components/Partners';
 import ContactSection from '../components/ContactSection';
-import Footer from "../components/Footer";
+import Footer from '../components/Footer';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -43,38 +43,34 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#c3a3fb' }}>
-      {/* ✅ Uniform Background Watermark Grid */}
-      {/* ✅ Clean, evenly spaced watermark background */}
-<div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-  <div
-    style={{
-      position: 'absolute',
-      width: '3000px',
-      height: '5000px',
-      left: '-1200px',
-      top: '-900px',
-      fontFamily: 'Anton, sans-serif',
-      fontWeight: 600,
-      fontSize: '110px',
-      lineHeight: '100%',
-      letterSpacing: '2px',
-      color: 'transparent',
-      WebkitTextStroke: '2px #ffffff', // <- outline effect
-      transform: 'matrix(0.97, -0.25, 0.24, 0.97, 0, 0)',
-      whiteSpace: 'pre-wrap',
-      opacity: 0.14,
-    }}
-  >
-    {Array(100).fill('SHE BUILDS ').join('')}
-  </div>
-</div>
+    <div className="min-h-screen flex flex-col bg-[#c3a3fb] overflow-hidden relative">
+      {/* ✅ Watermark Background */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div
+          style={{
+            position: 'absolute',
+            width: '3000px',
+            height: '5000px',
+            left: '-1200px',
+            top: '-900px',
+            fontFamily: 'Anton, sans-serif',
+            fontWeight: 600,
+            fontSize: '110px',
+            lineHeight: '100%',
+            letterSpacing: '2px',
+            color: 'transparent',
+            WebkitTextStroke: '2px #ffffff',
+            transform: 'matrix(0.97, -0.25, 0.24, 0.97, 0, 0)',
+            whiteSpace: 'pre-wrap',
+            opacity: 0.14,
+          }}
+        >
+          {Array(100).fill('SHE BUILDS ').join('')}
+        </div>
+      </div>
 
-
-
-
-      {/* Actual Page Content */}
-      <div className="relative z-10">
+      {/* ✅ Actual Content */}
+      <div className="relative z-10 flex-grow">
         <Header />
         <HeroSection />
         <Navigation activeSection={activeSection} scrollToSection={scrollToSection} />
@@ -89,6 +85,9 @@ const Index = () => {
           <ContactSection />
         </div>
       </div>
+
+      {/* ✅ Footer at Bottom Always */}
+      <Footer />
     </div>
   );
 };
