@@ -7,13 +7,13 @@ const faqs = [
       'SheBuilds is a groundbreaking women-only hackathon and innovation program that empowers the next generation of women technologists, creators, and changemakers. It brings together passionate developers, designers, and problem-solvers from across India in an immersive, high-impact hackathon experience.',
   },
   {
-  question: 'Who can participate?',
-  answer: (
-    <ul className="list-disc list-inside space-y-1">
-      <li>Women professionals with up to 3 years of industry experience</li>
-      <li>Female students currently pursuing undergraduate or postgraduate education</li>
-    </ul>
-  ),
+    question: 'Who can participate?',
+    answer: (
+      <ul className="list-disc list-inside space-y-1">
+        <li>Women professionals with up to 3 years of industry experience</li>
+        <li>Female students currently pursuing undergraduate or postgraduate education</li>
+      </ul>
+    ),
   },
   {
     question: 'How do I register & submit my idea?',
@@ -35,25 +35,24 @@ const faqs = [
       'No worries! Hackathons are a great way to learn and grow. We’ll also have mentors to guide you throughout the event.',
   },
   {
-  question: 'How do I stay updated?',
-  answer: (
-    <p>
-      Join the WhatsApp group for seamless communication & discussion:&nbsp;
-      <a
-        href="https://chat.whatsapp.com/BJznM3FLO69JFpIPYQQu3V?mode=r_t"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-purple-600 underline font-medium"
-      >
-        Join here
-      </a>
-    </p>
-  ),
-},
+    question: 'How do I stay updated?',
+    answer: (
+      <p>
+        Join the WhatsApp group for seamless communication & discussion:&nbsp;
+        <a
+          href="https://chat.whatsapp.com/BJznM3FLO69JFpIPYQQu3V?mode=r_t"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple-600 underline font-medium"
+        >
+          Join here
+        </a>
+      </p>
+    ),
+  },
   {
     question: 'Will there be any hardware provided?',
-    answer:
-      'No, required hardware devices should be accommodated by participants.',
+    answer: 'No, required hardware devices should be accommodated by participants.',
   },
   {
     question: 'How much time will it take to receive my rewards?',
@@ -72,14 +71,14 @@ const faqs = [
 ];
 
 const FaqSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(index === openIndex ? null : index);
   };
 
   return (
-    <section className="px-4 py-10">
+    <section className="px-4 pt-32 pb-0">
       <div className="container mx-auto px-4 md:px-8 max-w-5xl">
         <h1 className="text-center font-spaceGrotesk text-3xl md:text-5xl font-bold uppercase text-white mb-10">
           FAQ&apos;s

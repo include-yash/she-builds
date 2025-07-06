@@ -3,7 +3,15 @@ import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-800 text-white text-xs sm:text-sm py-4 sm:py-6 w-full">
+    <footer
+      className="text-white text-xs sm:text-sm py-4 sm:py-6 w-full relative z-50"
+      style={{
+        backgroundColor: "#9333EA", // solid purple (Tailwind's purple-900)
+        opacity: 1,                 // force full opacity
+        backdropFilter: "none",    // remove blur/transparency effects
+        mixBlendMode: "normal",    // prevent blending with background
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
         <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-4 sm:gap-0 text-center sm:text-left">
 

@@ -1,3 +1,5 @@
+import FaqSection from "../components/ui/Faq"
+
 const Partners = () => {
   const partnerData = [
     {
@@ -44,6 +46,7 @@ const Partners = () => {
           </div>
         </div>
       </div>
+      <FaqSection />
     </section>
   );
 };

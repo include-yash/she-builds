@@ -22,7 +22,7 @@ const ContactSection = () => {
   return (
     <>
       {/* Contact Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-10">
+      <section className="px-4 sm:px-6 lg:px-8 pt-0 pb-10">
         <div className="max-w-7xl mx-auto">
           <div className="bg-purple-600 rounded-3xl p-10 shadow-2xl">
             <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
@@ -35,7 +35,7 @@ const ContactSection = () => {
                   key={index}
                   className="px-6 py-4 text-center text-white flex flex-col justify-center"
                 >
-                  <h3 className="text-2xl font-bold mb-2">{contact.name}</h3>
+                  <h3 className="text-3xl sm:text-4xl font-bold mb-2">{contact.name}</h3>
                   <p className="text-lg mb-1">{contact.phone}</p>
                   <p className="text-lg">{contact.email}</p>
                 </div>

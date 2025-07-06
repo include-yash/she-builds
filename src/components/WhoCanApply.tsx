@@ -2,24 +2,19 @@ import React from 'react';
 
 const WhoCanApply = () => {
   return (
-    <section id="who-can-apply" className="px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-purple-500/90 rounded-3xl p-6 sm:p-10 shadow-xl text-white relative overflow-hidden">
-
-          {/* Decorative Gradient Blur */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 blur-2xl opacity-20 pointer-events-none" />
-
-          {/* Header - Always in row layout */}
-          <div className="relative flex justify-between items-start mb-12 gap-6">
-            <div className="flex-1 text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-                Who Can Apply?
+    <section id="who-can-apply" className="px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mx-auto w-full">
+        <div className="bg-purple-500/90 rounded-3xl p-6 sm:p-8 shadow-2xl relative text-white">
+          {/* Title and Icon - Always in Row */}
+          <div className="flex justify-between items-start mb-6 gap-4">
+            {/* Heading Block */}
+            <div className="flex-1">
+              <h2 className="text-3xl sm:text-4xl font-bold leading-tight mb-2">
+                WHO<br />CAN APPLY?
               </h2>
-              <p className="mt-2 text-xl sm:text-2xl font-semibold text-white text-justify max-w">
-                We welcome driven women innovators, leaders, and learners who are ready to challenge boundaries and shape the future.
-              </p>
             </div>
 
+            {/* Icon on Right */}
             <div className="flex-shrink-0">
               <img
                 src="/book.png"
@@ -30,16 +25,18 @@ const WhoCanApply = () => {
           </div>
 
           {/* Description */}
-          <div className="relative text-left text-lg sm:text-xl md:text-2xl font-medium space-y-4">
-            <p className="text-white font-semibold border-b border-white/20 pb-2">
+          <div className="text-white text-xl sm:text-2xl leading-relaxed">
+            <p className="mb-4">
+              We welcome driven <span className="font-bold">women innovators, leaders, and learners</span> who are ready to challenge boundaries and shape the future.
+            </p>
+            <p className="font-semibold mb-2 border-b border-white/30 pb-2">
               Eligibility Criteria:
             </p>
-            <ul className="list-disc pl-6 sm:pl-10 space-y-2 text-white/90">
-              <li>Women professionals with upto 3 years of industry experience</li>
+            <ul className="list-disc pl-5 sm:pl-8 text-white/90 space-y-2">
+              <li>Women professionals with up to 3 years of industry experience</li>
               <li>Female students currently pursuing undergraduate or postgraduate education</li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>

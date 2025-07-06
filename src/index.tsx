@@ -59,7 +59,7 @@ const Index = ({ activeSection, scrollToSection }) => {
     </div>
 
     {/* Sticky Footer */}
-    <Footer />
+    
   </div>
 );
 
