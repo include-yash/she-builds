@@ -27,16 +27,17 @@ const PrizePool = () => {
         <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-6 sm:p-10 md:p-14 shadow-2xl relative">
           
           {/* Title with icon */}
-          <div className="flex items-center justify-center gap-3 mb-10 sm:mb-12">
-            <img
-              src="/money.png"
-              alt="Prize Icon"
-              className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
-            />
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-purple-700 tracking-tight drop-shadow-md">
-              PRIZE POOL
-            </h2>
-          </div>
+          <div className="flex items-center justify-center gap-4 mb-10 sm:mb-12">
+  <img
+    src="/money.png"
+    alt="Prize Icon"
+    className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+  />
+  <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-purple-700 tracking-tight drop-shadow-md">
+    PRIZE POOL
+  </h2>
+</div>
+
 
           {/* Prize Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

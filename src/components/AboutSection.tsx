@@ -34,7 +34,7 @@ const AboutSection = () => {
           {/* Description */}
           <div className="text-gray-800 text-xl sm:text-3xl leading-relaxed">
             <p>
-              SheBuilds is a <span className='font-bold'>24-hour women-centric</span> innovation sprint where developers, designers, and builders from across India come together to solve real-world problems through technology and creativity — SheBuilds is a launchpad for women in tech to innovate, inspire, and lead.
+              We welcome <span className="font-bold">women-driven</span> innovators, leaders, learners, and students who are ready to challenge boundaries and shape the future.
             </p>
           </div>
 
