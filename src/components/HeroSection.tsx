@@ -52,9 +52,15 @@ export default function HeroSection() {
           </div>
 
           {/* Register Button */}
-          <button className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white px-6 md:px-10 py-3 rounded-full font-semibold text-base md:text-lg shadow-lg transition duration-300 transform hover:scale-105">
-            Register Now
-          </button>
+          <a
+  href="https://tally.so/r/mRQp7j"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white px-6 md:px-10 py-3 rounded-full font-semibold text-base md:text-lg shadow-lg transition duration-300 transform hover:scale-105">
+    Register Now
+  </button>
+</a>
 
           {/* Countdown */}
           <div className="mt-6 w-full flex justify-center">

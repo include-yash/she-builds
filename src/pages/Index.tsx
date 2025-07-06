@@ -11,6 +11,12 @@ import Partners from '../components/Partners';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
+interface IndexProps {
+  activeSection: string;
+  scrollToSection: (id: string) => void;
+}
+
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('about');
 

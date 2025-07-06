@@ -26,6 +26,11 @@ const Header: React.FC = () => {
       </div>
 
       {/* CTA Button */}
+      <a
+  href="https://tally.so/r/mRQp7j"
+  target="_blank"
+  rel="noopener noreferrer"
+>
       <Button
         className={`
           bg-gradient-to-br from-purple-600 to-purple-800 
@@ -40,6 +45,7 @@ const Header: React.FC = () => {
       >
         Register Now
       </Button>
+      </a>
     </header>
   );
 };
