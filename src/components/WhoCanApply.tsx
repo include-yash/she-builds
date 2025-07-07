@@ -5,23 +5,16 @@ const WhoCanApply = () => {
     <section id="who-can-apply" className="px-4 sm:px-6 lg:px-8 py-0">
       <div className="max-w-7xl mx-auto">
         <div className="bg-purple-500/90 rounded-3xl p-6 sm:p-8 shadow-2xl relative text-white">
-          {/* Title and Icon - Always in Row */}
-          <div className="flex justify-between items-center mb-8 gap-4">
-            {/* Heading Block */}
-            <div className="flex-1">
-              <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-                WHO CAN APPLY?
-              </h2>
-            </div>
-
-            {/* Icon on Right */}
-            <div className="flex-shrink-0">
+          {/* Title and Icon - Updated layout */}
+          <div className="flex items-center justify-center mb-8 gap-2">
+            <h2 className="flex items-center gap-6 text-3xl sm:text-4xl font-bold leading-tight">
+              WHO CAN APPLY?
               <img
                 src="/book.png"
                 alt="Book"
-                className="w-12 h-12 object-contain"
+                className="w-16 h-16 object-contain"
               />
-            </div>
+            </h2>
           </div>
 
           {/* Description */}

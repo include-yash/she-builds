@@ -19,21 +19,18 @@ const Timeline = () => {
           <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
 
             {/* Title with Clock Icon */}
-            <div className="flex items-center justify-center gap-3 mb-12">
-              <div className="flex-1 text-center">
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-purple-600">
-                  EVENT TIMELINE
-                </h2>
-              </div>
-
-              <div className="relative group flex-shrink-0">
-                <div className="absolute inset-0 bg-purple-200/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300" />
-                <img
-                  src="/clock.png"
-                  alt="Clock Icon"
-                  className="relative w-12 h-12 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
+            <div className="flex items-center justify-center gap-2 mb-12">
+              <h2 className="flex items-center gap-6 text-3xl sm:text-4xl font-extrabold text-purple-600">
+                EVENT TIMELINE
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-purple-200/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300" />
+                  <img
+                    src="/clock.png"
+                    alt="Clock Icon"
+                    className="relative w-12 h-12 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              </h2>
             </div>
 
             {/* Background Lines */}

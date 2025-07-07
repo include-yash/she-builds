@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-4 sm:gap-0 text-center sm:text-left">
 
           {/* Links */}
-          <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2 font-semibold">
+          <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2">
             <a
               href="https://accidental-potato-870.notion.site/Vliv-presents-SheBuild-Hackathon-224ce9ad774880718a22c14db3c4bd6f"
               className="hover:underline"

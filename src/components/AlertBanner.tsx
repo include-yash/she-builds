@@ -11,7 +11,7 @@ const AlertBanner = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex-1 text-center">
           <p className="font-semibold text-sm sm:text-base">
-            Registration and idea submission dates have been extended till July 20th 11:59 PM.
+            Problem Statement announcement and Idea submissions starts from 10th July
           </p>
         </div>
         
