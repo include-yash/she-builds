@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhoCanApply = () => {
   return (
-    <section id="who-can-apply" className="px-4 sm:px-6 lg:px-8 py-16">
+    <section id="who-can-apply" className="px-4 sm:px-6 lg:px-8 py-0">
       <div className="max-w-7xl mx-auto">
         <div className="bg-purple-500/90 rounded-3xl p-6 sm:p-8 shadow-2xl relative text-white">
           {/* Title and Icon - Always in Row */}
