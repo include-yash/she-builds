@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AlertBanner from '../components/AlertBanner';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import Navigation from '../components/Navigation';
@@ -50,6 +51,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#c3a3fb] overflow-hidden relative">
+      {/* ✅ Alert Banner */}
+      <AlertBanner />
+
       {/* ✅ Watermark Background */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <div

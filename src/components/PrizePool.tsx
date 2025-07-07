@@ -7,7 +7,7 @@ const PrizePool = () => {
   const prizes = [
     { position: "WINNERS", amount: "1L", icon: Crown, emoji: "👑" },
     { position: "1ST RUNNER UP", amount: "50k", icon: Trophy, emoji: "🥈" },
-    { position: "2ND RUNNER UP", amount: "20k", icon: Award, emoji: "🥉" },
+    { position: "2ND RUNNER UP", amount: "25k", icon: Award, emoji: "🥉" },
   ];
 
   return (
@@ -27,16 +27,22 @@ const PrizePool = () => {
         <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-6 sm:p-10 md:p-14 shadow-2xl relative">
           
           {/* Title with icon */}
-          <div className="flex items-center justify-center gap-4 mb-10 sm:mb-12">
-  <img
-    src="/money.png"
-    alt="Prize Icon"
-    className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-  />
-  <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-purple-700 tracking-tight drop-shadow-md">
-    PRIZE POOL
-  </h2>
-</div>
+          <div className="flex items-center justify-center gap-3 mb-10 sm:mb-12">
+            <div className="flex-1 text-center">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-purple-700 tracking-tight drop-shadow-md">
+                PRIZE POOL
+              </h2>
+            </div>
+
+            <div className="relative group flex-shrink-0">
+              <div className="absolute inset-0 bg-purple-200/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300" />
+              <img
+                src="/money.png"
+                alt="Prize Icon"
+                className="relative w-12 h-12 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+/>
+            </div>
+          </div>
 
 
           {/* Prize Cards */}

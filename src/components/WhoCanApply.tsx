@@ -3,14 +3,14 @@ import React from 'react';
 const WhoCanApply = () => {
   return (
     <section id="who-can-apply" className="px-4 sm:px-6 lg:px-8 py-16">
-      <div className="mx-auto w-full">
+      <div className="max-w-7xl mx-auto">
         <div className="bg-purple-500/90 rounded-3xl p-6 sm:p-8 shadow-2xl relative text-white">
           {/* Title and Icon - Always in Row */}
-          <div className="flex justify-between items-start mb-6 gap-4">
+          <div className="flex justify-between items-center mb-8 gap-4">
             {/* Heading Block */}
             <div className="flex-1">
-              <h2 className="text-3xl sm:text-4xl font-bold leading-tight mb-2">
-                WHO<br />CAN APPLY?
+              <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
+                WHO CAN APPLY?
               </h2>
             </div>
 
@@ -19,7 +19,7 @@ const WhoCanApply = () => {
               <img
                 src="/book.png"
                 alt="Book"
-                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
+                className="w-12 h-12 object-contain"
               />
             </div>
           </div>
@@ -33,7 +33,7 @@ const WhoCanApply = () => {
               Eligibility Criteria:
             </p>
             <ul className="list-disc pl-5 sm:pl-8 text-white/90 space-y-2">
-              <li>Women professionals with up to 3 years of industry experience</li>
+              <li>Women professionals with up to 2 years of industry experience</li>
               <li>Female students currently pursuing undergraduate or postgraduate education</li>
             </ul>
           </div>

@@ -41,7 +41,7 @@ const ProblemStatement = () => {
                 <img
                   src="/bulb.png"
                   alt="Bulb"
-                  className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+                  className="relative w-12 h-12 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
             </div>

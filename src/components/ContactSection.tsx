@@ -13,11 +13,12 @@ const ContactSection = () => {
       email: 'soham@hackculture.in',
     },
     {
-      name: 'RACHIT',
+      name: 'RACHIT RANKA',
       phone: '+91 9584258725',
       email: 'programs@hackculture.in',
     },
   ];
+  
 
   return (
     <>
