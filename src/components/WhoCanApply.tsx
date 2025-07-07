@@ -33,7 +33,7 @@ const WhoCanApply = () => {
               Eligibility Criteria:
             </p>
             <ul className="list-disc pl-5 sm:pl-8 text-white/90 space-y-2">
-              <li>Women professionals with up to 2 years of industry experience</li>
+              <li>Women professionals with up to 3 years of industry experience</li>
               <li>Female students currently pursuing undergraduate or postgraduate education</li>
             </ul>
           </div>
