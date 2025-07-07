@@ -32,12 +32,8 @@ const AboutSection = () => {
            {/* Description */}
            <div className="text-gray-800 text-xl sm:text-2xl leading-relaxed">
            <p>
-              We welcome <span className="font-bold">women-driven</span> innovators, leaders, learners, and students who are ready to challenge boundaries and shape the future.
+           We welcome <span className="font-bold">women-driven</span> innovators, leaders, learners, and students who are ready to challenge boundaries and shape the future. <span className="font-bold">SheBuilds</span> is a women-centric hackathon designed to celebrate and empower women in technology. In partnership with leading companies, universities, and changemakers, it creates a safe and inspiring space where women developers, designers, and product thinkers come together to innovate, collaborate, and lead solutions for real-world challenges.
            </p>
-           <br />
-            <p>
-              <span className="font-bold">SheBuilds</span> is a women-centric hackathon designed to celebrate and empower women in technology. In partnership with leading companies, universities, and changemakers, SheBuilds creates a safe and inspiring space where women developers, designers, and product thinkers come together to innovate, collaborate, and lead solutions for real-world challenges.
-            </p>
           </div>
 
         </div>
