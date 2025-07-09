@@ -49,9 +49,16 @@ export default function HeroSection() {
               <span className="text-white">All India</span>{' '}
               <span className="text-black">Women only Hackathon</span>
             </p>
-            <p className="text-sm md:text-base font-medium mt-2">
-              <span className="text-white">In partnership with</span>{' '}
-              <span className="text-black font-bold">GitHub</span>
+            <p className="text-sm md:text-lg font-medium mt-4 flex items-center justify-center gap-2">
+              
+              <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 border border-white/20">
+              <span className="text-white/90">In partnership with</span>
+                <img 
+                  src="/gt.webp" 
+                  alt="GitHub" 
+                  className="h-8 md:h-12 w-auto"
+                />
+              </div>
             </p>
           </div>
 
