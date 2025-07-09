@@ -49,6 +49,10 @@ export default function HeroSection() {
               <span className="text-white">All India</span>{' '}
               <span className="text-black">Women only Hackathon</span>
             </p>
+            <p className="text-sm md:text-base font-medium mt-2">
+              <span className="text-white">In partnership with</span>{' '}
+              <span className="text-black font-bold">GitHub</span>
+            </p>
           </div>
 
           {/* Register Button */}

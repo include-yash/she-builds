@@ -7,8 +7,8 @@ const Partners = () => {
       link: 'https://www.hackculture.in',
     },
     {
-      src: '/htv.jpg',
-      link: 'https://thehightable.world/',
+      src: '/gt.webp',
+      link: 'https://github.com/',
     },
     {
       src: '/tms.png',
@@ -38,7 +38,7 @@ const Partners = () => {
                   <img
                     src={partner.src}
                     alt={`Partner ${index + 1}`}
-                    className="max-h-16 object-contain px-6"
+                    className={`object-contain px-6 ${partner.src === '/gt.webp' ? 'max-h-20' : 'max-h-16'}`}
                   />
                 </div>
               </a>
