@@ -56,7 +56,7 @@ export default function HeroSection() {
                 <img 
                   src="/gt.webp" 
                   alt="GitHub" 
-                  className="h-10 md:h-20 w-auto"
+                  className="h-16 md:h-20 w-auto"
                 />
               </div>
             </p>
