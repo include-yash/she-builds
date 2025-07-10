@@ -7,12 +7,16 @@ const Partners = () => {
       link: 'https://www.hackculture.in',
     },
     {
-      src: '/gt.webp',
+      src: ['/github-mark.png', '/GitHub_Logo.png'],
       link: 'https://github.com/',
     },
     {
       src: '/tms.png',
       link: 'https://testmyskills.ai/',
+    },
+    {
+      src: '/gr.png',
+      link: 'https://www.geekroom.in/',
     },
   ];
 
@@ -25,7 +29,7 @@ const Partners = () => {
             OUR PARTNERS
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
             {partnerData.map((partner, index) => (
               <a
                 key={index}
@@ -35,11 +39,26 @@ const Partners = () => {
                 className="block"
               >
                 <div className="bg-gradient-to-br from-white to-white rounded-2xl h-40 flex items-center justify-center shadow-[8px_8px_0px_#a78bfa] hover:shadow-[12px_12px_0px_#7c3aed] transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 perspective-1000">
-                  <img
-                    src={partner.src}
-                    alt={`Partner ${index + 1}`}
-                    className={`object-contain px-6 ${partner.src === '/gt.webp' ? 'max-h-20' : 'max-h-16'}`}
-                  />
+                  {Array.isArray(partner.src) ? (
+                    <div className="flex items-center justify-center gap-4 px-6">
+                      <img
+                        src={partner.src[0]}
+                        alt="GitHub Mark"
+                        className="object-contain max-h-16"
+                      />
+                      <img
+                        src={partner.src[1]}
+                        alt="GitHub Logo"
+                        className="object-contain max-h-12"
+                      />
+                    </div>
+                  ) : (
+                    <img
+                      src={partner.src}
+                      alt={`Partner ${index + 1}`}
+                      className={`object-contain px-6 ${partner.src === '/gr.png' ? 'max-h-28' : 'max-h-16'}`}
+                    />
+                  )}
                 </div>
               </a>
             ))}
