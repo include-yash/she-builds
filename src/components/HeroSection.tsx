@@ -54,9 +54,9 @@ export default function HeroSection() {
               <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 border border-white/20">
               <span className="text-white/90">In partnership with</span>
                 <img 
-                  src="/gt.webp" 
-                  alt="GitHub" 
-                  className="h-16 md:h-20 w-auto"
+                  src="/GitHub_Logo.png" 
+                  alt="GitHub Logo" 
+                  className="h-12 md:h-12 w-auto"
                 />
               </div>
             </p>
