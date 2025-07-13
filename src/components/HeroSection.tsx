@@ -56,7 +56,7 @@ export default function HeroSection() {
                 <img 
                   src="/GitHub_Logo.png" 
                   alt="GitHub Logo" 
-                  className="h-12 md:h-12 w-auto"
+                  className="h-10 md:h-12 w-auto"
                 />
               </div>
             </p>

@@ -24,7 +24,7 @@ const AboutSection = () => {
               <img
                 src="/heart.png"
                 alt="Heart"
-                className="w-4 h-4 object-contain"
+                className="w-12 h-12 object-contain"
               />
             </h2>
           </div>

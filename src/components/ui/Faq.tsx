@@ -40,7 +40,7 @@ const faqs = [
       <p>
         Join the WhatsApp group for seamless communication & discussion:&nbsp;
         <a
-          href="https://chat.whatsapp.com/BJznM3FLO69JFpIPYQQu3V?mode=r_t"
+          href="https://chat.whatsapp.com/DJT6GUW71mZ3VCeStIf11g?mode=r_t"
           target="_blank"
           rel="noopener noreferrer"
           className="text-purple-600 underline font-medium"
