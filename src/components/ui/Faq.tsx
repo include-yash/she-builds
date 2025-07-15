@@ -66,7 +66,7 @@ const faqs = [
   {
     question: 'Do all team members need to register?',
     answer:
-      'Yes, all the team members must register. However, only one member from the team will submit the idea (team members’ details can be added during submission).',
+      'Only one person from the team has to register.',
   },
 ];
 
