@@ -18,7 +18,7 @@ const faqs = [
   {
     question: 'How do I register & submit my idea?',
     answer:
-      'You can register by clicking the "Register Now" button on this page, which redirects to the Devfolio platform for registration & idea submissions.',
+      'You can register by clicking the "Register Now" button on this page, which redirects to the Tally form for registration & idea submissions.',
   },
   {
     question: 'Is there a registration fee?',

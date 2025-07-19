@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 const CountdownBlock = () => {
-  // Set targetDate to 29 days from now
+  // Set targetDate to August 1st, 2025 at 10 AM
   const getTargetDate = () => {
-    const now = new Date();
-    now.setDate(now.getDate() + 29);
-    return now;
+    return new Date(2025, 7, 1, 10, 0, 0); // Month is 0-indexed, so 7 = August
   };
 
   const targetDate = getTargetDate();
