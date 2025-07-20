@@ -14,16 +14,6 @@ const ProblemStatement1 = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600">
-      {/* Yellow Banner */}
-      <div className="bg-yellow-400 py-3 px-4">
-        <div className="container mx-auto text-center">
-          <p className="text-purple-900 font-semibold">
-            Problem Statement announcement and Idea submissions starts from 20th July
-            <button className="ml-4 text-purple-900 hover:text-purple-700">✕</button>
-          </p>
-        </div>
-      </div>
-
       {/* Header */}
       <div className="bg-white/10 backdrop-blur-sm border-b border-white/20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -49,7 +39,7 @@ const ProblemStatement1 = () => {
               <img 
                 src="/omni-logo.webp" 
                 alt="OMNI" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </div>
           </div>
