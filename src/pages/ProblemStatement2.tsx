@@ -27,11 +27,6 @@ const ProblemStatement2 = () => {
             </Button>
             <div className="flex items-center gap-6">
               <img 
-                src="/Black Full Logo.png" 
-                alt="HackCulture" 
-                className="h-12 w-auto"
-              />
-              <img 
                 src="/vliv-logo.svg" 
                 alt="VLIV" 
                 className="h-12 w-auto"

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import FaqSection from './ui/Faq';
 
 const timelineEvents = [
-  { date: '10th - 22th July', title: 'Registrations' },
+  { date: '10th - 24th July', title: 'Registrations' },
   { date: '20th - 24th July', title: 'Idea Submission' },
   { date: '27th July', title: 'Shortlisting' },
   { date: '29th July', title: 'AMA Session' },

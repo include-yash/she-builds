@@ -126,7 +126,7 @@ const ProblemStatement = () => {
             {/* Footer Note */}
             <div className="mt-12 text-center">
               <p className="text-white/80 text-sm">
-                Both problem statements require integration with <span className="font-semibold text-blue-200">Omnidim.io Voice AI Assistant</span> for natural conversation interfaces
+                Both problem statements require integration with <a href="https://omnidim.io" target="_blank" rel="noopener noreferrer" className="font-semibold text-white/80 hover:text-white underline">Omnidim.io</a> Voice AI Assistant for natural conversation interfaces
               </p>
             </div>
           </div>

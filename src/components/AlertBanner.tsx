@@ -11,7 +11,7 @@ const AlertBanner = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex-1 text-center">
           <p className="font-semibold text-sm sm:text-base">
-            Problem Statement announcement and Idea submissions starts from 20th July
+          Idea submission closes on 24th July, 11:59 PM IST
           </p>
         </div>
         
