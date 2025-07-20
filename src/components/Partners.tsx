@@ -23,8 +23,10 @@ const Partners = () => {
     {
       src: '/omni-logo.webp',
       link: 'https://www.omnidim.io/',
-      className: 'object-contain px-6 max-h-12',
-      background: 'bg-gradient-to-br from-purple-400 to-purple-600',
+      className: 'object-contain px-6 max-h-16',
+      background: 'bg-slate-900',
+      fallbackText: 'OMNI',
+      hasSpecialBackground: true,
     },
     {
       src: '/gr.png',
@@ -42,9 +44,20 @@ const Partners = () => {
       src: '/women-in-tech.png',
       link: 'https://women-in-tech.org/',
       className: 'object-contain px-6 max-h-16',
-      background: 'bg-gradient-to-br from-purple-400 to-purple-600',
+      background: 'bg-gradient-to-br from-white to-white',
     },
   ];
+
+  const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>, partner: any) => {
+    const img = event.target as HTMLImageElement;
+    if (partner.fallbackText && partner.hasSpecialBackground) {
+      // Replace with fallback text for OMNI
+      const parent = img.parentElement;
+      if (parent) {
+        parent.innerHTML = `<div class="text-white font-bold text-xl text-center">${partner.fallbackText}</div>`;
+      }
+    }
+  };
 
   return (
     <section className="px-8 py-12">
@@ -71,6 +84,8 @@ const Partners = () => {
                       src={partner.src}
                       alt={`Partner ${index + 1}`}
                       className={partner.className}
+                      onError={(e) => handleImageError(e, partner)}
+                      loading="lazy"
                     />
                   </div>
                 </a>
@@ -92,6 +107,8 @@ const Partners = () => {
                       src={partner.src}
                       alt={`Partner ${index + 5}`}
                       className={partner.className}
+                      onError={(e) => handleImageError(e, partner)}
+                      loading="lazy"
                     />
                   </div>
                 </a>
