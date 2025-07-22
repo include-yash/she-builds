@@ -25,16 +25,16 @@ const ProblemStatement1 = () => {
             >
               <ArrowLeft className="w-5 h-5" />
             </Button>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-1 lg:gap-6">
               <img 
                 src="/vliv-logo.svg" 
                 alt="VLIV" 
-                className="h-8 w-auto"
+                className="h-5 w-auto lg:h-8"
               />
               <img 
                 src="/omni-logo.webp" 
                 alt="OMNI" 
-                className="h-12 w-auto"
+                className="h-8 w-auto lg:h-12"
               />
             </div>
           </div>
