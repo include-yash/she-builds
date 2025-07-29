@@ -29,6 +29,12 @@ const Partners = () => {
       hasSpecialBackground: true,
     },
     {
+      src: '/ds-brar.png',
+      link: '#',
+      className: 'object-contain px-6 max-h-24',
+      background: 'bg-[#007878]',
+    },
+    {
       src: '/gr.png',
       link: 'https://www.geekroom.in/',
       className: 'object-contain px-6 max-h-28',
@@ -46,6 +52,7 @@ const Partners = () => {
       className: 'object-contain px-6 max-h-16',
       background: 'bg-gradient-to-br from-white to-white',
     },
+    
   ];
 
   const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>, partner: any) => {
@@ -71,7 +78,7 @@ const Partners = () => {
           <div className="space-y-6">
             {/* First 4 logos - 2 rows of 2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {partnerData.slice(0, 4).map((partner, index) => (
+              {partnerData.slice(0, 2).map((partner, index) => (
                 <a
                   key={index}
                   href={partner.link}
@@ -92,9 +99,9 @@ const Partners = () => {
               ))}
             </div>
             
-            {/* Last 3 logos - 1 row of 3 */}
+            {/* Last 4 logos - 1 row of 3 + 1 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {partnerData.slice(4).map((partner, index) => (
+              {partnerData.slice(2).map((partner, index) => (
                 <a
                   key={index + 4}
                   href={partner.link}
